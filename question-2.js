@@ -27,6 +27,9 @@ async function callRawg() {
     document.querySelector(".result").innerHTML = gameElements.join("");
   } catch (error) {
     console.error(error);
+    document.querySelector(
+      ".result"
+    ).innerHTML = `<h3 class="error">Something bad happened :(</h3>`;
   }
 }
 callRawg();
